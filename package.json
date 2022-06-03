@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "fsevents": "^2.2.2",
+    "joi": "^17.6.0",
+    "nth-check": "^2.1.1",
+    "react-scripts": "^5.0.1",
+    "yargs-parser": "^21.0.1"
+  }
+}

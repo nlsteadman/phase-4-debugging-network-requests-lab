@@ -63,11 +63,15 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  I checked the Rails server logs. I checked the controller action for create; it said Toys.create instead of Toy.create.
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: 
+  I checked the Rails server logs, which said 'Unexpected end of JSON input.
+  I then checked the controller action for update; it was missing the render. I added 'render json: toy'.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  404 not found. I checked routes.rb. The destroy route was missing, so I added it.
